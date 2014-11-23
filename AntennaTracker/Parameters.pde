@@ -129,12 +129,19 @@ const AP_Param::Info var_info[] PROGMEM = {
     // @User: Standard
     GSCALAR(proxy_mode,          "PROXY_MODE",   0),
 
-    // @Param: SERVO_TYPE
-    // @DisplayName: Type of servo system being used
-    // @Description: This allows selection of position servos or on/off servos
+    // @Param: YAW_SERVO_TYPE
+    // @DisplayName: Type of yaw servo system being used
+    // @Description: This allows selection of position servos or on/off servos for yaw positioning
     // @Values: 0:Position,1:OnOff
     // @User: Standard
-    GSCALAR(servo_type,          "SERVO_TYPE",   SERVO_TYPE_POSITION),
+    GSCALAR(yaw_servo_type,      "YAW_SERVO_TYPE",   SERVO_TYPE_POSITION),
+
+    // @Param: PITCH_SERVO_TYPE
+    // @DisplayName: Type of pitch servo system being used
+    // @Description: This allows selection of position servos or on/off servos for pitch positioning
+    // @Values: 0:Position,1:OnOff
+    // @User: Standard
+    GSCALAR(pitch_servo_type,    "PITCH_SERVO_TYPE",   SERVO_TYPE_POSITION),
 
     // @Param: ONOFF_YAW_RATE
     // @DisplayName: Yaw rate for on/off servos

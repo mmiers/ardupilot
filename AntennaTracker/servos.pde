@@ -26,7 +26,7 @@ static void init_servos()
  */
 static void update_pitch_servo(float pitch)
 {
-    switch ((enum ServoType)g.servo_type.get()) {
+    switch ((enum ServoType)g.pitch_servo_type.get()) {
     case SERVO_TYPE_ONOFF:
         update_pitch_onoff_servo(pitch);
         break;
@@ -138,7 +138,7 @@ static void update_pitch_onoff_servo(float pitch)
  */
 static void update_yaw_servo(float yaw)
 {
-    switch ((enum ServoType)g.servo_type.get()) {
+    switch ((enum ServoType)g.yaw_servo_type.get()) {
     case SERVO_TYPE_ONOFF:
         update_yaw_onoff_servo(yaw);
         break;
